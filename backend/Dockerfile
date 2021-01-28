@@ -5,4 +5,4 @@ WORKDIR /usr/src/app
 COPY *.json ./
 RUN npm install -g json-server 
 
-CMD json-server --watch google-maps-response.json --port $PORT --host 0.0.0.0
+CMD json-server --watch APIs.json --port $PORT --host 0.0.0.0

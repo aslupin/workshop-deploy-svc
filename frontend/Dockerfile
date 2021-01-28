@@ -9,7 +9,7 @@ COPY .env ./
 RUN npm ci
 RUN npm run build
 
-# Starting stage
+# Build stage
 FROM node:15-alpine
 WORKDIR /usr/src/app
 COPY --from=builder /usr/src/app/build build/
