@@ -1,0 +1,44 @@
+.avatar {
+    width: 70%;
+    max-width: 300px;
+    min-width: 150px;
+    padding: 50px;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    color: yellow;
+}
+
+.name span {
+    color: white;
+}
+
+.bio {
+    font-size: 14px;
+    color: aqua;
+    margin-bottom: 15px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    max-width: 550px;
+    margin: 5px auto;
+    background-color: darkviolet;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    color: springgreen;
+}
+
+.loading {
+    font-size: 50px;
+    color: black;
+    margin: 25vh;
+}
