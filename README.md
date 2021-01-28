@@ -1,5 +1,7 @@
 # Workshop for Deployment 101 🕯
 
+Slide for workshop: link [Click here 📽](https://docs.google.com/presentation/d/1MHeoAMvZybnoHnq5ZNsvsez8UiL6MtUXBlD_Ev965cs/edit?usp=sharing)
+
 ## Prerequire ✨
 
 -   Heroku Account
