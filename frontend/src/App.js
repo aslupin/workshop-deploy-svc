@@ -8,9 +8,7 @@ function App() {
 
     useEffect(() => {
         setLoading(true);
-        fetch(
-            `${process.env.REACT_APP_HEROKU_BACKEND_APP_NAME}.herokuapp.com/profile`
-        )
+        fetch(`${process.env.REACT_APP_BACKEND_APP_NAME}.herokuapp.com/profile`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
