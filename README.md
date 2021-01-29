@@ -11,7 +11,7 @@ Slide for workshop: [Click here 📽](https://docs.google.com/presentation/d/1MH
 
 1. Fork this repository. 💾
 2. Create Heroku Project on your account and note your app name for use in step (5). You have to create two project for frontend-service and backend-service. 📦
-3. Get API-KEY from your account. Click `https://dashboard.heroku.com/account`, Scroll to `API Key` then click `Reveal` button.
+3. Get API-KEY from your account. Click `https://dashboard.heroku.com/account` and scroll to `API Key` then click `Reveal` button. 🔑
 4. Create secret variable in forked repository by go to repository page>Setting>Secret then click `New repository secret` button. You have to add two secret variable (`HEROKU_API_KEY` and `HEROKU_EMAIL`). 🎉
 
 | Name           | Description                    |
@@ -19,14 +19,14 @@ Slide for workshop: [Click here 📽](https://docs.google.com/presentation/d/1MH
 | HEROKU_API_KEY | Get by step (3)                |
 | HEROKU_EMAIL   | Email for login heroku website |
 
-5. Run this command by replace `[HEROKU_BACKEND_APP_NAME]` and `[HEROKU_FRONTEND_APP_NAME]` in your own information. 💣
+5. Run this command by replace `[HEROKU_BACKEND_APP_NAME]` and `[HEROKU_FRONTEND_APP_NAME]` in your own information. If you use Window OS then scroll to end of page for read alternative replace variable. 💣
 
 ```bash
 make initial-app HEROKU_BACKEND_APP_NAME="[HEROKU_BACKEND_APP_NAME]" HEROKU_FRONTEND_APP_NAME="[HEROKU_FRONTEND_APP_NAME]"
 ```
 
 6. Edit APIs JSON file (`./backend/APIs.json`) to your own information. 📝
-7. Commit and push your code .
+7. Commit and push your code. 💊
 
 ```bash
 git add .
@@ -52,3 +52,10 @@ git push --set-upstream origin release-frontend
 ```
 
 10. Enjoy your app 🚀
+
+## Troubleshooting 🐛
+
+-   If you use Window OS then you have to manual replace `HEROKU_BACKEND_APP_NAME` and `HEROKU_FRONTEND_APP_NAME` for each files instead `make` command on step (5).
+    -   ./.github/workflows/deploy-backend-heroku.yml
+    -   ./.github/workflows/deploy-frontend-heroku.yml
+    -   ./frontend/.env
