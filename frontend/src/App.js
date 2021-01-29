@@ -8,11 +8,13 @@ function App() {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`${process.env.REACT_APP_BACKEND_APP_NAME}.herokuapp.com/profile`)
+        fetch(
+            `https://${process.env.REACT_APP_BACKEND_APP_NAME}.herokuapp.com/profile`
+        )
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
-                setProfile(data.profile);
+                setProfile(data);
                 setLoading(false);
             });
     }, []);
