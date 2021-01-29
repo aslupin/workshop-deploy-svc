@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 COPY src src/
-COPY pubilc pubilc/
+COPY public public/
 COPY .env ./
 
 RUN npm ci
