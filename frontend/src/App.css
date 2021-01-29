@@ -37,6 +37,10 @@
     color: springgreen;
 }
 
+.link:hover {
+    background-color: hotpink;
+}
+
 .loading {
     font-size: 50px;
     color: black;
