@@ -16,4 +16,4 @@ jobs:
                   heroku_app_name: HEROKU_FRONTEND_APP_NAME
                   heroku_email: ${{secrets.HEROKU_EMAIL}}
                   usedocker: true
-                  appdir: "backend"
+                  appdir: "frontend"
