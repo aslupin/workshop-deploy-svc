@@ -10,6 +10,6 @@ sed -i -e 's,HEROKU_FRONTEND_APP_NAME,'$HEROKU_FRONTEND_APP_NAME',g' ./.github/w
 rm -rf .github/workflows/*.yml-e
 
 # Replace ENV
-sed -i -e 's,HEROKU_BACKEND_APP_NAME,'$HEROKU_BACKEND_APP_NAME',g' ./frontend/.env
+sed -i -e 's,HEROKU_BACKEND_APP_NAME,'$HEROKU_BACKEND_APP_NAME',g' ./frontend/.env.production
 # Clear bin
-rm -rf ./frontend/.env-e
+rm -rf ./frontend/.env.production-e

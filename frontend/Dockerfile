@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 COPY src src/
 COPY public public/
-COPY .env ./
+COPY .env.production ./
 
 RUN npm ci
 RUN npm run build
