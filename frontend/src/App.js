@@ -1,6 +1,6 @@
-import "./App.css";
 import { useState, useEffect } from "react";
 import avatar from "./assets/avatar.jpg";
+import "./App.css";
 
 function App() {
     const [loading, setLoading] = useState(false);
